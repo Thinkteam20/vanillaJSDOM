@@ -1,10 +1,11 @@
 const h1 = document.querySelector("h1");
 
 function handleMouseEnter() {
-  if (h1.className === "active") {
-    h1.className = "";
+  const clickedClass = "clicked";
+  if (h1.classList.contains(clickedClass)) {
+    h1.classList.remove(clickedClass);
   } else {
-    h1.className = "active";
+    h1.classList.add(clickedClass);
   }
 }
 
