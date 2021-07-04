@@ -1,13 +1,18 @@
 const loginForm = document.querySelector(".login-form");
 const loginInput = document.querySelector(".login-form input");
 const loginButton = document.querySelector(".login-form button");
+const greeting = document.querySelector("#greeting");
 
-const link = document.querySelector("a");
+const HIDDEN_CLASSNAME = "hidden";
+// convention uppercase variable is used when i want to save STRING
 
 function onLoginSubmit(e) {
   e.preventDefault();
   const username = loginInput.value;
-  console.log(username);
+  loginForm.classList.add(HIDDEN_CLASSNAME);
+  //greeting.innerHTML = "Hello " + username;
+  greeting.innerHTML = `Hello ${username}`;
+  greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
 function handleLink(e) {
@@ -17,4 +22,3 @@ function handleLink(e) {
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
-link.addEventListener("click", handleLink);

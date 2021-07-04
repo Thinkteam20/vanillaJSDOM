@@ -12,3 +12,7 @@ h1 {
 .sexy-font {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+.hidden {
+  display: none;
+}
