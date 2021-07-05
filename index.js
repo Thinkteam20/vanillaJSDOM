@@ -14,7 +14,7 @@ function onLoginSubmit(e) {
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
   //greeting.innerHTML = "Hello " + username;
-  paintGreetings(username);
+  paintGreetings();
 }
 
 function handleLink(e) {
@@ -23,7 +23,8 @@ function handleLink(e) {
   console.log(e);
 }
 
-function paintGreetings(username) {
+function paintGreetings() {
+  const username = localStorage.getItem("username");
   greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
@@ -38,5 +39,5 @@ if (savedUserName === null) {
   loginForm.addEventListener("submit", onLoginSubmit);
 } else {
   //show the username
-  paintGreetings(savedUserName);
+  paintGreetings();
 }

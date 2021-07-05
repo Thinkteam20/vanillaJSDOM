@@ -8,16 +8,24 @@
     <title>jsChromeApp</title>
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="10"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <button>Log In</button>
+    <h1>Random Number Game</h1>
+
+    <form>
+      <label for="quantity">Generate a number between 0 and </label>
+      <input type="number" id="quantity" name="quantity" min="1" max="" />
     </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <script src="index.js"></script>
+    <pre></pre>
+    <form>
+      <label for="quantity">Guess the Number</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="" />
+      <button>Play</button>
+      <pre></pre>
+      <p>you choose: 17, the machine choose 12</p>
+      <pre></pre>
+      <p><b>You Won!</b></p>
+      <p><b>You Lost!</b></p>
+    </form>
+
+    <script src="chellenge.js"></script>
   </body>
 </html>
