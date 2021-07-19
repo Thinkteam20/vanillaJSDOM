@@ -1,6 +1,6 @@
 const quotes = [
   {
-    quote: "Be yourself; everyone else is already taken.",
+    quote: "Be yourself everyone else is already taken.",
     auther: "Oscar Wilde",
   },
   {
@@ -10,7 +10,7 @@ const quotes = [
   },
   {
     quote:
-      "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+      "Two things are infinite the universe and human stupidity; and I'm not sure about the universe.",
     auther: "Albert Einstein",
   },
   {

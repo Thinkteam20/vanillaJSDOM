@@ -1,18 +1,42 @@
-body {
-  background-color: beige;
+#background {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: white;
+  height: 100vh;
+  width: 100%;
 }
-h1 {
-  color: cornflowerblue;
-  transition: color 0.5s ease-in-out;
+.img0 {
+  background-image: url("JS/img/0.jpeg");
 }
-.clicked {
-  color: tomato;
+.img1 {
+  background-image: url("JS/img/1.jpeg");
+}
+.img2 {
+  background-image: url("JS/img/2.jpeg");
 }
 
-.sexy-font {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+#clock {
+  color: #e9eb9e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
 }
 
-.hidden {
-  display: none;
+#todoPart {
+  color: #e9eb9e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+#quote {
+  color: #e9eb9e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
 }
