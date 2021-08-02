@@ -28,8 +28,8 @@ const quotes = [
   },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const auther = document.querySelector("#quote span:last-child");
+const quote = document.querySelector("#quote h2:first-child");
+const auther = document.querySelector("#quote h2:last-child");
 
 //console.log(quotes[6 - 1]);
 const todaysQuotes = quotes[Math.floor(Math.random() * quotes.length)];

@@ -1,4 +1,4 @@
-#background {
+.background {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,13 +8,13 @@
   width: 100%;
 }
 .img0 {
-  background-image: url("JS/img/0.jpeg");
+  background-image: url("todoProject/img/0.jpeg");
 }
 .img1 {
-  background-image: url("JS/img/1.jpeg");
+  background-image: url("todoProject/img/1.jpeg");
 }
 .img2 {
-  background-image: url("JS/img/2.jpeg");
+  background-image: url("todoProject//img/2.jpeg");
 }
 
 #clock {
