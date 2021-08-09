@@ -5,27 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>toDoApp-vanillaJS</title>
+    <title>VanillaJS todoApp_🗓</title>
   </head>
-  <body class="background">
-    <div id="clock"></div>
-    <div id="todoPart">
-      <h2>Today's Todos</h2>
-      <ul id="todos"></ul>
+
+  <body>
+    <!-- app -->
+    <div id="bg">
+      <img src="./img/bg3.jpg" alt="" />
     </div>
-    <form id="todo-form">
-      <input type="text" placeholder="What's your name?" />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <h2></h2>
-      <h2></h2>
+    <!-- app_header -->
+    <div class="app__header">
+      <div class="header__name">
+        <h1>Welcome to TodoList🗓</h1>
+      </div>
+      <div class="header__clockbar">
+        <div class="clockbars">
+          <span class="clock-text">testing</span>
+          <div class="smalltext">Month</div>
+        </div>
+        <div class="clockbars">
+          <span class="clock-text">testing</span>
+          <div class="smalltext">Day</div>
+        </div>
+        <div class="clockbars">
+          <span class="clock-text">testing</span>
+          <div class="smalltext">Hours</div>
+        </div>
+        <div class="clockbars">
+          <span class="clock-text">testing</span>
+          <div class="smalltext">Minutes</div>
+        </div>
+        <div class="clockbars">
+          <span class="clock-text">testing</span>
+          <div class="smalltext">Seconds</div>
+        </div>
+      </div>
     </div>
+    <!-- Todo section -->
+
     <script src="./todoProject/greeting.js"></script>
     <script src="./todoProject/todos.js"></script>
     <script src="./todoProject/clock.js"></script>
     <script src="./todoProject/quote.js"></script>
     <script src="./todoProject/weather.js"></script>
-    <script src="./todoProject/randomBg.js"></script>
   </body>
 </html>
