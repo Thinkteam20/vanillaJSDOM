@@ -1,3 +1,6 @@
+:root {
+}
+
 #bg {
   position: fixed;
   top: -50%;
@@ -6,7 +9,6 @@
   height: 200%;
 }
 #bg img {
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -17,28 +19,29 @@
 }
 
 #contents {
-  height: 100vh;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
-
+/* GREETING (PART1)*/
 .greeting {
   background-color: hotpink;
-  height: 100px;
-  width: 400px;
+  height: 250px;
+  width: 800px;
   display: flex;
+  transform: translateY(100px);
 }
 
 .greeting__left-avata {
   position: relative;
-  height: 100px;
-  width: 100px;
+  height: 250px;
+  width: 300px;
 }
 
 .greeting__right {
-  width: 300px;
-  height: 100px;
+  width: 500px;
+  height: 250px;
   background-color: yellow;
 }
 .inner {
@@ -52,4 +55,26 @@
 
 .greeting__before2 {
   background-color: black;
+}
+
+/* CONTENTS_MAIN (PART2) */
+
+.contents_main {
+  width: 800px;
+  height: 400px;
+  background-color: violet;
+  transform: translateY(100px);
+  display: flex;
+}
+
+.main__right {
+  background-color: teal;
+  height: 400px;
+  width: 400px;
+  flex: 1;
+}
+.main__left {
+  background-color: beige;
+  height: 400px;
+  width: 400px;
 }
