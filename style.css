@@ -1,80 +1,159 @@
+/* Global */
+
 :root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #f0f0f0;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #004477;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+  --color-star1: #c2b662;
+  --color-star2: #00342a;
+  --color-star3: #ecdbc9;
+  --color-star4: #ecdbc9;
+  --color-star5: #e85823;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 8px;
+
+  /* Animation */
+  --animation-duration: 300ms;
 }
 
-#bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-}
-#bg img {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-}
-
-#contents {
+body {
   height: 100%;
+}
+.contents {
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+}
+.section__container {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.greeting {
+  width: 100%;
+  height: 250px;
   display: flex;
-  flex-direction: column;
+}
+.greeting__left-avata {
+  width: 200px;
+  height: 250px;
+  flex-basis: 20%;
+  background-color: transparent;
+}
+.greeting__right {
+  flex-basis: 80%;
+}
+.inner__greeting__before {
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 40px;
+}
+.before__div {
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+  background-color: var(--color-star3);
+  padding: 10px 100px;
+}
+
+.inner__greeting__before2 {
+  height: 50%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-/* GREETING (PART1)*/
-.greeting {
-  background-color: hotpink;
-  height: 250px;
-  width: 800px;
+.before2__div {
   display: flex;
-  transform: translateY(100px);
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+  background-color: var(--color-star3);
+  padding: 40px 58px;
+}
+.inner__greeting__before2 h1 {
+  margin: 0 5px;
+}
+.inner__greeting__before2 form {
+  line-height: 26px;
+}
+.inner__greeting__before2 form input {
+  border: none;
+  border-bottom: 2px solid red;
+  text-align: center;
+  background-color: var(--color-dark-pink);
 }
 
-.greeting__left-avata {
-  position: relative;
-  height: 250px;
-  width: 300px;
-}
-
-.greeting__right {
-  width: 500px;
-  height: 250px;
-  background-color: yellow;
-}
-.inner {
-  width: 100%;
-  height: 50%;
-}
-
-.greeting__before {
-  background-color: blue;
-}
-
-.greeting__before2 {
-  background-color: black;
-}
-
-/* CONTENTS_MAIN (PART2) */
-
+/* Contents MAin */
 .contents_main {
-  width: 800px;
-  height: 400px;
-  background-color: violet;
-  transform: translateY(100px);
+  height: 450px;
+  margin-top: 10px;
   display: flex;
 }
 
+/* Todo */
 .main__right {
-  background-color: teal;
-  height: 400px;
-  width: 400px;
-  flex: 1;
+  flex-basis: 60%;
+  background-color: var(--color-star5);
+  border-radius: var(--size-border-radius);
+  margin-right: 5px;
+  color: white;
 }
+
+.todo {
+  text-align: center;
+}
+.todo-line {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+/* APIS */
 .main__left {
-  background-color: beige;
-  height: 400px;
-  width: 400px;
+  flex-basis: 40%;
+  box-sizing: border-box;
+}
+
+.date {
+  background-color: var(--color-star2);
+  height: 150px;
+  margin-bottom: 3px;
+  border-radius: var(--size-border-radius);
+}
+.weatherApi {
+  height: 150px;
+  background-color: var(--color-orange);
+  margin-bottom: 3px;
+  border-radius: var(--size-border-radius);
+}
+.coffee-pick {
+  height: 150px;
+  margin-bottom: 3px;
+  background-color: #fe918d;
+  border-radius: var(--size-border-radius);
 }

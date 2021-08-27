@@ -12,26 +12,45 @@
     <!-- app -->
 
     <!-- app_header -->
-    <section id="contents">
-      <div class="greeting">
-        <img
-          src="./img/coffee.png"
-          alt="barista"
-          class="greeting__left-avata"
-        />
-        <div class="greeting__right">
-          <div class="inner greeting__before"></div>
-          <div class="inner greeting__before2"></div>
+    <section id="contents" class="section section__container">
+      <div class="mains">
+        <div class="greeting">
+          <img
+            src="./img/barista.png"
+            alt="barista"
+            class="greeting__left-avata"
+          />
+          <div class="greeting__right">
+            <div class="inner__greeting__before">
+              <div class="before__div">
+                <h1>
+                  G'day I am ROY <br />
+                  What is your name?
+                </h1>
+              </div>
+            </div>
+            <div class="inner__greeting__before2">
+              <div class="before2__div">
+                <h1>My name is?</h1>
+                <form action="">
+                  <input type="text" placeholder="What's your name?" />
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="contents_main">
-        <div class="main__right">
-          <div class="todo"></div>
-        </div>
-        <div class="main__left">
-          <div class="date"></div>
-          <div class="weatherApi"></div>
-          <div class="coffee-pick"></div>
+        <div class="contents_main">
+          <div class="main__right">
+            <div class="todo">
+              <h2>Today's Todo</h2>
+              <div class="todo-line"></div>
+            </div>
+          </div>
+          <div class="main__left">
+            <div class="date"></div>
+            <div class="weatherApi"></div>
+            <div class="coffee-pick"></div>
+          </div>
         </div>
       </div>
     </section>
