@@ -82,12 +82,14 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding: 40px;
 }
 .before__div {
+  display: flex;
   border-radius: var(--size-border-radius);
   background-color: var(--color-star3);
-  padding: 0.1px 100px;
+  padding: 0;
+  width: 50%;
+  justify-content: center;
 }
 
 .inner__greeting__before2 {
@@ -96,11 +98,22 @@ body {
   justify-content: center;
   align-items: center;
 }
+.deactivate {
+  display: none;
+}
 .before2__div {
   display: flex;
   border-radius: var(--size-border-radius);
   background-color: var(--color-star3);
-  padding: 10px 58px;
+  width: 50%;
+  justify-content: center;
+}
+.helloName {
+  display: flex;
+  border-radius: var(--size-border-radius);
+  background-color: var(--color-star3);
+  width: 100%;
+  justify-content: center;
 }
 .inner__greeting__before2 h1 {
   margin: 0 5px;
@@ -113,10 +126,14 @@ body {
   line-height: 59.44px;
 }
 .inner__greeting__before2 form input {
-  border: none;
-  border-bottom: 2px solid red;
+  background: 0;
+  border: 0;
+  outline: none;
+  width: 80vw;
+  max-width: 400px;
+  font-size: 1.5em;
+  transition: padding 0.3s 0.2s ease;
   text-align: center;
-  background-color: var(--color-dark-pink);
 }
 
 /* Contents MAin */
@@ -167,11 +184,13 @@ body {
   color: var(--color-white);
   font-size: var(--font-medium);
 }
-.weatherApi {
+#weatherApi {
   height: 150px;
   background-color: var(--color-orange);
   margin-bottom: 2px;
   border-radius: var(--size-border-radius);
+  line-height: 150px;
+  text-align: center;
 }
 #coffee {
   height: 150px;

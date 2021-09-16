@@ -15,12 +15,15 @@
     <section id="contents" class="section section__container">
       <div class="mains">
         <div class="greeting">
-          <img
-            src="./img/barista-noback.png"
-            alt="barista"
-            class="greeting__left-avata"
-          />
+          <div class="greeting__left-avata">
+            <img
+              src="./img/barista-noback.png"
+              alt="barista"
+              class="greeting__left-avata"
+            />
+          </div>
           <div class="greeting__right">
+            <div class="deactivate"></div>
             <div class="inner__greeting__before">
               <div class="before__div">
                 <h3>
@@ -31,7 +34,6 @@
             </div>
             <div class="inner__greeting__before2">
               <div class="before2__div">
-                <h3>My name is?</h3>
                 <form action="">
                   <input type="text" placeholder="What's your name?" />
                 </form>
@@ -39,6 +41,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Contents Main -->
         <div class="contents_main">
           <div class="main__right">
             <!-- Todo -->
@@ -54,7 +58,12 @@
           <div class="main__left">
             <!-- Timer -->
             <div id="clock"></div>
-            <div class="weatherApi"></div>
+            <!-- weather -->
+            <div id="weatherApi">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <!-- Coffee pick -->
             <div id="coffee">
               <h3>barista-pick</h3>
@@ -70,5 +79,7 @@
     <script src="/todoProject/clock.js"></script>
     <script src="/todoProject/coffee.js"></script>
     <script src="/todoProject/weather.js"></script>
+    <script src="/todoProject/landingEffect.js"></script>
+    <script src="/todoProject/greeting.js"></script>
   </body>
 </html>
