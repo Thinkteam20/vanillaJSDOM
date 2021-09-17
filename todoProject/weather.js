@@ -23,7 +23,9 @@ function onGeoOk(position) {
     });
 }
 function onGeoError() {
-  alert(" Can't find you. No weather for you");
+  alert(
+    " Can't get your location permission on your local device. No weather information for you"
+  );
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
